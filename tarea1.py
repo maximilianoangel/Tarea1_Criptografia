@@ -13,11 +13,11 @@ def Clickear(elemento):
     WebDriverWait(driver,5).until(EC.element_to_be_clickable((By.XPATH,elemento))).click()
 
 codigo_postal=8320000
-Nombre='Francisco'
-Apellido1='rodriguez'
-Apellido2="cerda"
-contraseña='patricio_Alka'
-correo='drabernine16@gmail.com'
+Nombre='Jaime'
+Apellido1='Coloma'
+Apellido2="Parra"
+contraseña='mitimiti_Palta'
+correo='Probando.1234123@gmail.com'
 Fecha="23/06/1997"
 new_contraseña="1234567890qwertyuiopñlkjhgfdsazxcvbnm,.1234567890poiuyhjklñmnasdfgzxcvbnmqweasdfghoqasdfghjiopkalmskjuioazhbvf12345qwerttienajshfg13489aklñ"#139
 opcion=int(input("¿Que pagina desea auditar?\n  1. smartmobile\n  2. totamona\n "))
@@ -105,6 +105,7 @@ elif opcion==2:
             BuscarElement('email',correo)
             BuscarElement('password',contraseña)
             Clickear('/html/body/main/section/div/section/section/section/section/form/footer/div[1]/div/button')
+            print(i)
             if i+1<iteracion:
                 Clickear('/html/body/main/section/div/section/section/p[3]/a')
             i=i+1
