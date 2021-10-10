@@ -105,7 +105,6 @@ elif opcion==2:
             BuscarElement('email',correo)
             BuscarElement('password',contraseña)
             Clickear('/html/body/main/section/div/section/section/section/section/form/footer/div[1]/div/button')
-            print(i)
             if i+1<iteracion:
                 Clickear('/html/body/main/section/div/section/section/p[3]/a')
             i=i+1
